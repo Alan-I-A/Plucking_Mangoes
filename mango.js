@@ -1,4 +1,4 @@
-class Mango{
+class mango{
 	constructor(x,y,r)
 	{
 		var options={
@@ -9,7 +9,7 @@ class Mango{
 		this.x=x;
 		this.y=y;
 		this.r=r
-		this.image=loadImage("mango.png")
+		this.image=loadImage("images/mango.png")
 		this.body=Bodies.circle(this.x, this.y, this.r, options)
 		World.add(world, this.body);
 	}
@@ -19,6 +19,7 @@ class Mango{
 		var mangoPos=this.body.position;	
 		push()
 		translate(mangoPos.x, mangoPos.y);
+		// rectMode(CENTER);
 		rotate(this.body.angle)
 		fill(255,0,255)
 		imageMode(CENTER);
