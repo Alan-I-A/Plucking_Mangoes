@@ -15,10 +15,6 @@ class Stone{
 		this.stone = Constraint.create(options);
 		World.add(world, this.body);
     }
-    
-    fly(){
-        this.stone.bodyA = null;
-    }
 
 	display()
 	{
